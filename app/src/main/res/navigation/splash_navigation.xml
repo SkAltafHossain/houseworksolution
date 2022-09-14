@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:startDestination="@id/splashScreenFragment">
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.myproject.houseworksolution.ui.splashScreen.SplashScreenFragment"
+        android:label="Splash Screen"
+        tools:layout="@layout/splash_screen_fragment" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_secondSplashScreenFragment"
+            app:destination="@id/secondSplashScreenFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondSplashScreenFragment"
+        android:name="com.myproject.houseworksolution.ui.splashScreen.SecondSplashScreenFragment"
+        android:label="Second Splash Screen"
+        tools:layout="@layout/second_splash_screen_fragment" />
+</navigation>

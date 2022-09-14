@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayoutLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_50sdp"
+            app:layoutDescription="@xml/splash_screen_xml_constraintlayout_image_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:alpha="0"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayoutH"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layoutDescription="@xml/splash_screen_xml_constraintlayout_h_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/constraintLayoutO2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_200sdp"
+                android:alpha="0"
+                android:text="@string/h"
+                android:textColor="#FDFDFD"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayoutO2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layoutDescription="@xml/splash_screen_xml_constraintlayout_o2_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/constraintLayoutU"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/o2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_200sdp"
+                android:alpha="0"
+                android:text="@string/o"
+                android:textColor="#FDFDFD"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayoutU"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layoutDescription="@xml/splash_screen_xml_constraintlayout_u_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/constraintLayoutS"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/u"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_200sdp"
+                android:alpha="0"
+                android:text="@string/u"
+                android:textColor="#FDFDFD"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayoutS"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layoutDescription="@xml/splash_screen_xml_constraintlayout_s_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/constraintLayoutE"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_200sdp"
+                android:alpha="0"
+                android:text="@string/s"
+                android:textColor="#FDFDFD"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayoutE"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layoutDescription="@xml/splash_screen_xml_constraintlayout_e_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/constraintLayoutW"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_200sdp"
+                android:alpha="0"
+                android:text="@string/e"
+                android:textColor="#FDFDFD"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayoutW"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layoutDescription="@xml/splash_screen_xml_constraintlayout_w_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/constraintLayoutO"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_200sdp"
+                android:alpha="0"
+                android:text="@string/w"
+                android:textColor="#FDFDFD"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayoutO"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layoutDescription="@xml/splash_screen_xml_constraintlayout_o_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/constraintLayoutR"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/O"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_200sdp"
+                android:alpha="0"
+                android:text="@string/o"
+                android:textColor="#FDFDFD"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayoutR"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layoutDescription="@xml/splash_screen_xml_constraintlayout_r_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/constraintLayoutK"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_200sdp"
+                android:alpha="0"
+                android:text="@string/r"
+                android:textColor="#FDFDFD"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayoutK"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layoutDescription="@xml/splash_screen_xml_constraintlayout_k_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_200sdp"
+                android:alpha="0"
+                android:text="@string/k"
+                android:textColor="#FDFDFD"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayoutS2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layoutDescription="@xml/splash_screen_xml_constraintlayout_s2_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayoutK"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/S2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_200sdp"
+                android:alpha="0"
+                android:text="@string/s"
+                android:textColor="#FDFDFD"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayoutO3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layoutDescription="@xml/splash_screen_xml_constraintlayout_o3_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayoutS2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/o3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_200sdp"
+                android:alpha="0"
+                android:text="@string/o"
+                android:textColor="#FDFDFD"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayoutL"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layoutDescription="@xml/splash_screen_xml_constraintlayout_l_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayoutO3"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_200sdp"
+                android:alpha="0"
+                android:text="@string/l"
+                android:textColor="#FDFDFD"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayoutU2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layoutDescription="@xml/splash_screen_xml_constraintlayout_u2_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayoutL"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/u2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_200sdp"
+                android:alpha="0"
+                android:text="@string/u"
+                android:textColor="#FDFDFD"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayoutT"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layoutDescription="@xml/splash_screen_xml_constraintlayout_t_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayoutU2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_200sdp"
+                android:alpha="0"
+                android:text="@string/t"
+                android:textColor="#FDFDFD"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayoutI"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layoutDescription="@xml/splash_screen_xml_constraintlayout_i_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayoutT"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/i"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_200sdp"
+                android:alpha="0"
+                android:text="@string/i"
+                android:textColor="#FDFDFD"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayoutO4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layoutDescription="@xml/splash_screen_xml_constraintlayout_o4_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayoutI"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/o4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_200sdp"
+                android:alpha="0"
+                android:text="@string/o"
+                android:textColor="#FDFDFD"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayoutN"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layoutDescription="@xml/splash_screen_xml_constraintlayout_n_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayoutO4"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_200sdp"
+                android:alpha="0"
+                android:text="@string/n"
+                android:textColor="#FDFDFD"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
