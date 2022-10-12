@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     app:startDestination="@id/splashScreenFragment">
+
     <fragment
         android:id="@+id/splashScreenFragment"
         android:name="com.myproject.houseworksolution.ui.splashScreen.SplashScreenFragment"
@@ -16,9 +17,11 @@
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
     </fragment>
+
     <fragment
         android:id="@+id/secondSplashScreenFragment"
         android:name="com.myproject.houseworksolution.ui.splashScreen.SecondSplashScreenFragment"
         android:label="Second Splash Screen"
         tools:layout="@layout/second_splash_screen_fragment" />
+
 </navigation>
