@@ -120,7 +120,6 @@ class SplashScreenFragment : Fragment() {
 
         Handler(Looper.getMainLooper()).postDelayed({
             findNavController().navigate(R.id.action_splashScreenFragment_to_secondSplashScreenFragment)
-
         }, 11000)
     }
 

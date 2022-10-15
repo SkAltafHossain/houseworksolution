@@ -15,5 +15,7 @@
     <string name="t">T</string>
     <string name="i">I</string>
     <string name="n">N</string>
+    <string name="user_login">User Login</string>
+    <string name="worker_login">Worker Login</string>
 
 </resources>

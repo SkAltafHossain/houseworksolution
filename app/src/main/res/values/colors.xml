@@ -6,7 +6,8 @@
     <color name="textColor">#000000</color>
     <color name="textColorHint">#3E3E3E</color>
     <color name="backgroundColor">#CCF6F1</color>
-    <color name="splashScreenColor">#FFF</color>
+    <color name="splashScreenColor">@color/white</color>
     <color name="buttonStrokeColor">#944601</color>
+    <color name="white">#FFFFFF</color>
 
 </resources>
